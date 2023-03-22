@@ -1,0 +1,33 @@
+.Event-List {
+  flex: 2;
+  display: flex;  
+  margin-top: 80px;
+  overflow-y: auto;
+  flex-direction: column;  
+}
+
+.Event {  
+  padding: 5px;
+  margin: 10px;  
+  cursor: pointer;
+  color: #9B9DAC;  
+  border-radius: 5px;
+  border-style: groove;
+  text-decoration: none;  
+  background-color: #050A30;
+  border: thin solid #050A30;
+}
+
+h3 {  
+  color: #E6E6EA;
+  font-weight: bold
+}
+
+.Event:hover {
+  border-color: #E6E6EA;
+}
+
+.Event:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px #9B9DAC;
+}

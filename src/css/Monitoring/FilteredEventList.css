@@ -1,0 +1,76 @@
+.Container-Filtered-Events {
+  flex: 1;
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+}
+
+.Search-Events {
+  flex: 0;  
+  display: flex;
+  flex-direction: row;
+  margin: 10px 30px 0px 10px;
+  justify-content: space-between;  
+}
+
+input {
+  flex: 1;
+  display: flex;
+  padding: 5px;
+  color: #050A30; 
+  margin-right: 10px; 
+  border-radius: 5px; 
+  background-color: #E6E6EA; 
+  border: thin solid #050A30;
+}
+
+::placeholder {
+  color: #050A30;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  color: #E6E6EA;
+  font-weight: bold;
+  border-radius: 5px;   
+  background-color: #050A30;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px #9B9DAC;
+}
+
+.Filtered-Event-List {
+  flex: 2;
+  display: flex;
+  overflow-y: auto;  
+  flex-direction: column;
+}
+
+.Event {  
+  padding: 5px;
+  margin: 10px;  
+  cursor: pointer;
+  color: #9B9DAC;  
+  border-radius: 5px;
+  border-style: groove;
+  text-decoration: none;  
+  background-color: #050A30;
+  border: thin solid #050A30;
+}
+
+h3 {  
+  color: #E6E6EA;
+  font-weight: bold
+}
+
+.Event:hover {
+  border-color: #E6E6EA;
+}
+
+.Event:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px #9B9DAC;
+}
