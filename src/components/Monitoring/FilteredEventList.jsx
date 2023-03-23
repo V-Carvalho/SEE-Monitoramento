@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
+
 import "../../css/Monitoring/FilteredEventList.css";
 
 const firebaseConfig = {

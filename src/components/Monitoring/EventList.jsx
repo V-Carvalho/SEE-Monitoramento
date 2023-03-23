@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, onSnapshot } from "firebase/firestore";
+
 import "../../css/Monitoring/EventList.css";
 
 const firebaseConfig = {

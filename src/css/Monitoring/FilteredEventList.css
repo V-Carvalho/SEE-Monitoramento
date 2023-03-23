@@ -1,8 +1,11 @@
 .Container-Filtered-Events {
   flex: 1;
   display: flex;
-  margin-top: 80px;
+  height: 100vh;
+  border-radius: 5px;
   flex-direction: column;
+  margin: 80px 5px 0px 5px;
+  border: thin solid #E6E6EA;
 }
 
 .Search-Events {
