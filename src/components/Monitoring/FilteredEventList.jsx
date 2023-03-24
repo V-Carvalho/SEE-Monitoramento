@@ -49,14 +49,15 @@ function FilteredEventList()  {
 
       <ul className="Filtered-Event-List">
         {filteredEvents.map((event) => (
-          <li key={event.id} className="Event">
+          <li key={event.id} className="Filtered-Event">
             <h3>Cliente: {event.data.accountNumber} - Botão de Pânico</h3>
             <p>Cod.: {event.data.eventCode}</p>
             <p>Zona: {event.data.zoneNumber}</p>
             <p>Partição: {event.data.partitionNumber}</p>
             <p>Data: {event.data.dateEvent}</p>
             <p>Horário: {event.data.eventTime}</p>
-          </li>
+            <h4>Status do evento: {event.data.attendedEvent ?  'Fechado' : 'Aberto'} </h4>
+          </li>          
         ))}
       </ul>
     </div>

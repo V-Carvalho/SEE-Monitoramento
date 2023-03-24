@@ -1,21 +1,22 @@
 .Event-List {
   flex: 2;
   display: flex; 
-  height: 100vh;  
   overflow-y: auto;
+  list-style: none;
   border-radius: 5px;
   flex-direction: column; 
-  margin: 80px 5px 0px 5px;   
-  
-  border: thin solid #E6E6EA;
+  margin: 80px 5px 0px 5px;
+  height: calc(100vh - 85px);
+  border: thin solid #E6E6EA;  
 }
 
 .Event {  
   padding: 5px;
-  margin: 10px;  
-  cursor: pointer;
+  margin: 10px;
+  display: flex;  
   color: #9B9DAC;  
   border-radius: 5px;
+  flex-direction: row;
   border-style: groove;
   text-decoration: none;  
   background-color: #050A30;
@@ -27,11 +28,29 @@ h3 {
   font-weight: bold
 }
 
+.Event-Details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .Event:hover {
   border-color: #E6E6EA;
 }
 
-.Event:active {
+.Event:hover button {
+  color: #cc0000;
+}
+
+button {
+  flex-grow: 0;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 5px;
+  align-items: flex-end;
+}
+
+button:active {
   transform: translateY(2px);
   box-shadow: 0 5px #9B9DAC;
 }

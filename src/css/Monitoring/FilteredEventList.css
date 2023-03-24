@@ -1,10 +1,11 @@
 .Container-Filtered-Events {
   flex: 1;
   display: flex;
-  height: 100vh;
+  list-style: none;
   border-radius: 5px;
   flex-direction: column;
   margin: 80px 5px 0px 5px;
+  height: calc(100vh - 85px);
   border: thin solid #E6E6EA;
 }
 
@@ -52,10 +53,9 @@ button:active {
   flex-direction: column;
 }
 
-.Event {  
+.Filtered-Event {  
   padding: 5px;
   margin: 10px;  
-  cursor: pointer;
   color: #9B9DAC;  
   border-radius: 5px;
   border-style: groove;
@@ -69,11 +69,6 @@ h3 {
   font-weight: bold
 }
 
-.Event:hover {
+.Filtered-Event:hover {
   border-color: #E6E6EA;
-}
-
-.Event:active {
-  transform: translateY(2px);
-  box-shadow: 0 5px #9B9DAC;
 }
