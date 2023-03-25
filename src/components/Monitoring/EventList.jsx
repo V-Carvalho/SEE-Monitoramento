@@ -53,7 +53,7 @@ function EventList() {
             :          
           <li key={event.id} className="Event">
             <div className="Event-Details">
-              <h3>Cliente: {event.data.accountNumber} - Botão de Pânico</h3>
+              <h3>Cliente: {event.data.accountNumber} - {event.data.eventDescription}</h3>
               <p>Cod.: {event.data.eventCode}</p>
               <p>Zona: {event.data.zoneNumber}</p>
               <p>Partição: {event.data.partitionNumber}</p>
