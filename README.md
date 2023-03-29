@@ -1,10 +1,13 @@
-<div align="center">
+<div align="center"> 
 
 # 📡 SEE Monitoramento de alarmes
 
 </div>
 
-Este software foi desenvolvido com o objetivo de auxiliar pessoas que não possuem experiência na área de monitoramento de alarmes, a ideia aqui é simular o recebimento de um evento de alarme real (Botão de pânico intrusão, falha de comunicação...).
+Este software foi desenvolvido com o objetivo de auxiliar pessoas que não possuem experiência na área de monitoramento de alarmes, a ideia aqui é simular o recebimento de um evento de alarme (Botão de pânico, alarme de intrusão, falha de comunicação...).
+
+<img src="https://user-images.githubusercontent.com/34304319/228600300-7b8d37c9-f65e-4345-87aa-dc9fe7aa319e.gif" height="400" width="100%">
+
 
 ### 🌐 Link do projeto
 
