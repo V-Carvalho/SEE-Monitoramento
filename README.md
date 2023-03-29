@@ -1,6 +1,6 @@
 <div align="center"> 
 
-# 📡 SEE Monitoramento de alarmes
+# 📡 SEE Monitoramento de Alarmes
 
 </div>
 
