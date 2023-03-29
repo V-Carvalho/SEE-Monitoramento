@@ -4,7 +4,7 @@
 
 </div>
 
-Este software foi desenvolvido com o objetivo de auxiliar pessoas que não possuem experiência na área de monitoramento de alarmes, a ideia aqui é simular o recebimento de um evento de alarme (Botão de pânico, alarme de intrusão, falha de comunicação...).
+Este software foi desenvolvido com o objetivo de auxiliar pessoas que não possuem experiência na área de monitoramento de alarmes, onde implementei as funções básicas de um software de monitoramento, a ideia é simular o recebimento de um evento de alarme (Botão de pânico, alarme de intrusão, falha de comunicação...) onde o operador deve registar um loga de atendimento para cada evento recepcionado.
 
 <img src="https://user-images.githubusercontent.com/34304319/228600300-7b8d37c9-f65e-4345-87aa-dc9fe7aa319e.gif" height="400" width="100%">
 
