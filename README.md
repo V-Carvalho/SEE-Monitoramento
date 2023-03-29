@@ -8,12 +8,11 @@ Este software foi desenvolvido com o objetivo de auxiliar pessoas que não possu
 
 <img src="https://user-images.githubusercontent.com/34304319/228600300-7b8d37c9-f65e-4345-87aa-dc9fe7aa319e.gif" height="400" width="100%">
 
-
 ### 🌐 Link do projeto
 
 - [Clique Aqui!](https://see-monitoring.web.app/)
 
-### 🔜 Implementações futuras
+### ⛏️ Implementações futuras
 
 - Área para inserção do "log" de fechamento do evento.
 
