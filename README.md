@@ -1,4 +1,8 @@
+<div align="center">
+
 # 📡 SEE Monitoramento de alarmes
+
+</div>
 
 Este software foi desenvolvido com o objetivo de auxiliar pessoas que não possuem experiência na área de monitoramento de alarmes, a ideia aqui é simular o recebimento de um evento de alarme real (Botão de pânico intrusão, falha de comunicação...).
 
@@ -8,7 +12,8 @@ Este software foi desenvolvido com o objetivo de auxiliar pessoas que não possu
 
 ### 🔜 Implementações futuras
 
-* Área para inserção do "log" de fechamento do evento.
+- Área para inserção do "log" de fechamento do evento.
+
 - Aba de contatos.  
 
 ### 🔧 Tecnologias utilizadas
