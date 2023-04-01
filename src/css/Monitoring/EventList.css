@@ -11,14 +11,14 @@
 }
 
 .Event {  
-  padding: 5px;
+  padding: 8px;
   margin: 10px;
   display: flex;  
   color: #9B9DAC;  
-  border-radius: 5px;
-  flex-direction: row;
+  border-radius: 5px;  
   border-style: groove;
-  text-decoration: none;  
+  text-decoration: none;
+  flex-direction: column;  
   background-color: #050A30;
   border: thin solid #050A30;
 }
@@ -32,6 +32,7 @@ h3 {
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .Event:hover {
@@ -42,15 +43,51 @@ h3 {
   color: #cc0000;
 }
 
-button {
-  flex-grow: 0;
+.Log {
+  flex: 1;
   display: flex;
-  cursor: pointer;
-  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 5px; 
   align-items: flex-end;
+  flex-direction: column;
 }
 
-button:active {
+label {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  border-radius: 5px; 
+  margin-bottom: 5px;
+  background-color: #363A59;
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  display: flex;
+  padding: 5px;  
+  font-size: 15px;  
+  color: #FFFFFF; 
+  border-radius: 5px;  
+  font-weight: normal;
+  background-color: #363A59;
+}
+
+textarea::placeholder {
+  font-size: 15px; 
+  color: #cdced5;  
+  font-weight: normal;
+}
+
+.Close-Event-Button {
+  flex: 0;
+  display: flex;
+  cursor: pointer;
+  align-items: flex-start;
+  background-color: #363a59;
+}
+
+.Close-Event-Button:active {
   transform: translateY(2px);
   box-shadow: 0 5px #9B9DAC;
 }

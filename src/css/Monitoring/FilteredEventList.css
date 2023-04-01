@@ -21,14 +21,15 @@ input {
   flex: 1;
   display: flex;
   padding: 5px;
-  color: #050A30; 
+  color: #050A30;
+  font-weight: bold;  
   margin-right: 10px; 
-  border-radius: 5px; 
+  border-radius: 5px;  
   background-color: #E6E6EA; 
   border: thin solid #050A30;
 }
 
-::placeholder {
+input::placeholder {
   color: #050A30;
 }
 

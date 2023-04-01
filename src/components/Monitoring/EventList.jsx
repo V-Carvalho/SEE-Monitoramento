@@ -1,6 +1,6 @@
-import { MdClose, MdDelete } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { initializeApp } from "firebase/app";
+import { MdClose, MdDelete } from "react-icons/md";
 import { getFirestore, collection, onSnapshot, deleteDoc, doc, updateDoc, where } from "firebase/firestore";
 
 import "../../css/Monitoring/EventList.css";
@@ -20,6 +20,8 @@ const db = getFirestore(app);
 
 function EventList() {
   const [events, setEvents] = useState([]);
+  const [eventLog, setEventLog] = useState("");
+  const [indexEvent, setIndexEvent ] = useState(undefined);
 
   useEffect(() => {
     getRealTimeEvents();
@@ -33,17 +35,17 @@ function EventList() {
       }));
       setEvents(data);
     });
-  }  
+  }   
 
-  async function closeEvent(eventId) {
-    await updateDoc(doc(db, "events", eventId), { attendedEvent: true } );
+  async function closeEvent(eventId, eventLog) {
+    await updateDoc(doc(db, "events", eventId), { 
+      attendedEvent: true,
+      eventLog: eventLog, 
+    });
+    setEventLog(undefined);
   }
 
-  async function deleteEvent(eventId) {
-    await deleteDoc(doc(db, "events", eventId));
-  }
-
-  return(
+    return(
     <ul className="Event-List">
       {events.map((event, index) => (
         <div key={index}>          
@@ -59,8 +61,22 @@ function EventList() {
               <p>Partição: {event.data.partitionNumber}</p>
               <p>Data: {event.data.dateEvent}</p>
               <p>Horário: {event.data.eventTime}</p>
+            </div>           
+
+            <div className="Log">
+              <label>
+                <textarea 
+                  rows={5}
+                  type="text"                   
+                  placeholder="Log do evento: " 
+                  value={indexEvent == index ? eventLog : undefined} onChange={(event) => {
+                    setIndexEvent(index); 
+                    setEventLog(event.target.value) 
+                  }}                  
+                />
+              </label>
+              <button className="Close-Event-Button" onClick={() => closeEvent(event.id, eventLog)}> Fechar </button>
             </div>
-            <button onClick={() => closeEvent(event.id)}> <MdClose size={23} /> </button>
           </li>
           }
         </div>
