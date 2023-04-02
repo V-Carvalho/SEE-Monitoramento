@@ -75,7 +75,7 @@ function EventList() {
                   }}                  
                 />
               </label>
-              <button className="Close-Event-Button" onClick={() => closeEvent(event.id, eventLog)}> Fechar </button>
+              <button className="Close-Event-Button" onClick={() => closeEvent(event.id, eventLog)}> Fechar Evento </button>
             </div>
           </li>
           }
@@ -86,7 +86,3 @@ function EventList() {
 }
 
 export default EventList;
-
-
-// TODO: Adicionar area para escever o log do evento
-// TODO: Adicionar aba lateral com os dados do cliente (Aba de contatos)

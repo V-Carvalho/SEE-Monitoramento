@@ -31,6 +31,7 @@ input {
 
 input::placeholder {
   color: #050A30;
+  font-weight: normal; 
 }
 
 button {
@@ -46,6 +47,7 @@ button:active {
   transform: translateY(2px);
   box-shadow: 0 5px #9B9DAC;
 }
+
 
 .Filtered-Event-List {
   flex: 2;
@@ -73,3 +75,13 @@ h3 {
 .Filtered-Event:hover {
   border-color: #E6E6EA;
 }
+
+hr.solid  {
+  border-top: 3px solid  #E6E6EA;
+}
+
+h4 {
+  margin-top: 5px;
+  color: #E6E6EA;
+  font-weight: lighter;
+}  

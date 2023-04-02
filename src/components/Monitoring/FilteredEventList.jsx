@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
+import { getFirestore, collection, getDocs, query, where, orderBy} from "firebase/firestore";
 
 import "../../css/Monitoring/FilteredEventList.css";
 
@@ -22,7 +22,13 @@ function FilteredEventList()  {
   const [accountNumber, setAccountNumber] = useState("");
 
   async function getFilteredEvents(accountNumber) {
-    const docs = query(collection(db, "events"), where("accountNumber", "==", accountNumber));
+    const docs = query(
+      collection(db, "events"),
+      where("accountNumber", "==", accountNumber), 
+      where("attendedEvent", "==", true),
+      orderBy("dateEvent", "desc"),
+      orderBy("eventTime", "asc")
+    );
     await getDocs(docs)
       .then((response) => {
         const data = response.docs.map((event) => ({
@@ -56,7 +62,9 @@ function FilteredEventList()  {
             <p>Partição: {event.data.partitionNumber}</p>
             <p>Data: {event.data.dateEvent}</p>
             <p>Horário: {event.data.eventTime}</p>
-            <h4>Status do evento: {event.data.attendedEvent ?  'Fechado' : 'Aberto'} </h4>
+            <p>Status: {event.data.attendedEvent ? 'Fechado' : 'Aberto'}</p>
+            <hr />
+            <h4>Log do Evento: {event.data.eventLog}</h4>
           </li>          
         ))}
       </ul>
@@ -65,3 +73,5 @@ function FilteredEventList()  {
 }
 
 export default FilteredEventList;
+
+// TODO: Adicionar aba lateral com os dados do cliente (Aba de contatos)
